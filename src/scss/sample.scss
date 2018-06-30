@@ -1,0 +1,48 @@
+@import "./variable";
+@import "./color";
+
+body{
+  padding: 20px;
+  margin: 0;
+}
+div,
+p{
+  border:1px solid #CCCCCC;
+  margin: 0;
+  padding: 0;
+}
+
+.rotate{
+  transform: rotateZ(45deg);
+}
+
+.grid{
+  display: grid;
+  grid-gap:10px;
+  grid-template-columns: 1fr 2fr;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transition{
+  cursor: pointer;
+  transition: all .3s;
+  background-color: $clr_black;
+}
+.transition:hover{
+  background-color: $clr_white;
+}
+
+.anime{
+  animation: anime;
+}
+
+@keyframes anime {
+  0% { opacity: 0}
+  50% { opacity: 1}
+  100% { opacity: 0}
+}

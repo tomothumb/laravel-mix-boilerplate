@@ -4,11 +4,11 @@ This repository is a boilerplate of Laravel Mix for standalone ( without Laravel
 
 ## Description
 An article of this repo. in Japanese.  
-日本語の解説
+日本語の解説（2018年の記事）
 https://codechord.com/2018/07/standalone-laravel-mix-for-webpackbeginner/
 
 ## Dependency
-"laravel-mix": "^2.1.11"
+"laravel-mix": "^6.0.49",
 
 # Usage
 ```

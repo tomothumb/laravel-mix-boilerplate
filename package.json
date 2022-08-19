@@ -1,24 +1,25 @@
 {
   "name": "laravel-mix-boilerplate",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Standalone Laravel Mix boilerplate",
   "repository": "tomothumb/laravel-mix-boilerplate",
   "keywords": [
     "laravel",
     "webpack",
-    "laravel elixir",
     "laravel mix"
   ],
   "author": "Tomoyuki Tsujimoto",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
     "prod": "npm run production",
-    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "production": "mix --production"
   },
   "devDependencies": {
-    "laravel-mix": "^2.1.11"
+    "laravel-mix": "^6.0.49"
   }
 }

@@ -12,6 +12,13 @@ let mix = require('laravel-mix');
  */
 
 mix.js('src/js/main.js', 'dist/js/');
+mix.ts('src/js/app.tsx', 'dist/js/')
+    .react()
+    .extract([
+        'react',
+        'react-dom'
+    ]);
+
 mix.sass('src/scss/sample.scss', 'dist/css/')
     .options({
         autoprefixer: {
